@@ -186,7 +186,8 @@ La pregunta principal que queremos responder es la siguiente: ¿cómo se
 distribuye la materia en el Universo a gran escala? M\'as precisamente,
 queremos cuantificar los cambios en esta distribuci\'on en funci\'on
 del tiempo y de los par\'ametros cosmol\'ogicos que describen el
-Universo.
+Universo. Con esto esperamos constribuir a colaboraciones internacionales
+sobre cosmolog\'ia observacional.
 
 De partida nos ubicamos dentro de lo que se conoce como el modelo
 es\'tandar de la cosmolog\'ia. En este modelo el contenido de materia
@@ -311,11 +312,66 @@ $w$ \cite{2014arXiv1401.0046M}.
 Aunque la decripci\'on anal\'itica esbozada anteriorment
 permite acercarse a varios fen\'omenos del crecimiento de estructura,
 una descripci\'on detallada solamente ha sido posible a trav\'es de
-las simulaciones computacionales. Como en todo experimento num\'erico
+las simulaciones computacionales. Las simulaciones buscan seguir la
+evoluci\'on del campo de densidad de materia oscura en funci\'on del
+tiempo. 
+
+En el caso de simulaciones en la cosmolog\'ia est\'andar $\Lambda$
+Cold Dark Matter ($\Lambda$CDM) se sigue un aproximaci\'on en la cual
+solamente se simula la componente oscura y no la bari\'onica, dado que
+la primera domina la din\'amica del sistema. Luego de esto se toma un
+volumen computacional que represente una regi\'on del universo con
+distribuci\'on de materia oscura se discrerizada en part\'iculas
+computacionales con posiciones y velocidades que pueden evolucionar en
+el tiempo.  Esta forma general de realizar los c\'alculos ha sido
+perfeccionada durante los \'ultimos treinta a\~nos de investigaci\'on
+en el tema de formaci\'on de estructura en un Universo domiando por la
+materia oscura
+\cite{1985ApJ...292..371D,1999ApJ...522...82K,2005Natur.435..629S}.
+Aunque es posible incluir una descripci\'on del gas bari\'onico y de
+los procesos asociados a las formaci\'on estelar, nosotros centraremos
+nuestra discusi\'on en torno a las simulaciones que solamente incluyen
+la materia oscura, dado que son suficientes para los objetivos de
+nuestro proyecto.
+
+Como en todo experimento num\'erico
 hay dos cantidades centrales para la descripci\'on del sistema: las
 condiciones iniciales y las reglas para la evoluci\'on temporal del
-sistema. 
+sistema.  Las condiciones iniciales est\'an definen las
+posiciones y velocidades iniciales de las part\'iculas
+computacionales. En este caso los desplazamientos de las part\'iculas
+con respecto a una distribuci\'on homog\'ena de part\'iculas est\'an
+relacionados con las fluctuaciones tempranas en el campo de densidad y
+se pueden describir estad\'isiticamente a trav\'es del espectro de
+potencias. Una vez las posiciones iniciales est\'an determinadas se
+determinan las velocidades iniciales, usualmente a trav\'es de la
+aproximaci\'on de Zeldovich aunque es posible imponer estas
+condiciones iniciales a trav\'es de otras aproximaciones perturbativas
+\cite{2014MNRAS.439.3630W}. 
 
+La simulaci\'on sigue entonces la evoluci\'on de las posiciones y
+velocidades de las part\'iculas durante la historia del
+Universo. En el rango de evoluci\'on no lineal se forman
+sobre-densidades de materia oscura que reciben el nombre de halos, en
+los centros de estos halos las galaxias deberian formarse y
+evolucionar. En este punto es posible entonces pasar a una
+descripci\'on de la distribuci\'on de la simulaci\'on en t\'erminos de
+las posiciones, velocidades y masas de estos {\bf halos de materia
+  oscura}, que son la cantidades de inter\'es al momento de vincular
+las predicciones de los modelos con las observaciones. Estos halos
+sirven en las construcci\'on de {\bf cat\'alogos ficticios} que se
+son comparables con mapas de la distribuci\'on de galaxias en el
+Universo.
+
+Para la a relizaci\'on de simulaciones  que incluyan
+efectos de diferentes modelos de energ\'ia oscura hay tres
+posibilidades: campos homog\'eneos de energ\'ia oscura, campos
+inhomog\'eneos de energ\'ia oscura y modelos con de inhomogeneidad a
+gran escala \cite{2012PDU.....1..162B}. En este proyecto nos
+centraremos en los modelos $\Lambda$CDM y en los homog\'eneos de energ\'ia
+oscura que se pueden incluir en simulaciones hechas con la maquinaria
+$\Lambda$CDM a trav\'es de una parametrizaci\'on para la evoluci\'on
+del t\'ermino $\Omega_{DE}(z)$.
 
 \subsection{Observaciones}
 
@@ -333,15 +389,18 @@ Dentro de las mediciones m\'as importantes a partir de estas dos misiones
 ha sido el de la densidad de materia cosmol\'ogica $\Omega_m$
 \cite{2001Natur.410..169P} y el pico en la funci\'on de
 correlaci\'on correspondiente a la Oscilacion Ac\'ustica de Bariones
-(OAB) \cite{Eisenstein2005}.  
+(OAB) \cite{Eisenstein2005}. Actualmente las observaciones recientes de la OAB
+son las que proveeen una de las form\'as mas competitivas de acotar la
+historia de expansi\'on del Universo \cite{2014MNRAS.441...24A}.
 
-
-
-
-
-
-
- 
+En cuanto a las mediciones del crecimiento de estructura (cotas sobre
+la forma de la funci\'on $D(t)$ mencionada en la secci\'on sobre
+teor\'ia) estas se han a trav\'es de la cuantificaci\'on de la
+distrbuci\'on de las posiciones de las galaxias en la direcci\'on
+radial y perpendicular al observador \cite{2014MNRAS.439.3504S},
+aunque los resultados son de una precisi\'on que todav\'ia no permite
+distinguir claramente entre el modelo est\'andar y varias teor\'ias
+modificadas de la gravedad.
 
 
 \section{Estado del arte}
@@ -355,6 +414,7 @@ planteadas en el Marco Conceptual
 \subsection{Teor\'ia}
 
 \subsection{Simulaciones}
+
 
 \subsection{Observaciones}
 
