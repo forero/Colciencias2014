@@ -1,6 +1,34 @@
-\documentclass[12pt]{article}
-\usepackage[spanish]{babel}
+\documentclass[spanish,notitlepage,letterpaper,11pt]{article} % para
+                                % articulo en castellano
 \usepackage[utf8]{inputenc}
+%\usepackage[ansinew]{inputenc} % Acepta caracteres en castellano
+\usepackage[spanish]{babel}    % silabea palabras castellanas
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref} % navega por el doc
+\usepackage{graphicx}
+\usepackage{geometry}           % See geometry.pdf to learn the layout options.
+\geometry{letterpaper}          % ... or a4paper or a5paper or ... 
+%\geometry{landscape}           % Activate for for rotated page geometry
+%\usepackage[parfill]{parskip}  % Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{epstopdf}
+\usepackage{fancyhdr} % encabezados y pies de pg
+\pagestyle{fancy} 
+\chead{} 
+%\lhead{\textit{ Encabezado izquierdo }} % si se omite coloca el nombre de la seccion
+%\rhead{\textbf{Encabezado derecho}} 
+%\rfoot{\thepage} 
+
+\voffset = -0.25in 
+\textheight = 8.0in 
+\textwidth = 6.5in
+\oddsidemargin = 0.in
+\headheight = 20pt 
+\headwidth = 6.5in
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0,5pt}
+
 \newcommand{\apj}{ApJ}
 \newcommand{\apjs}{ApJS}
 \newcommand{\apjl}{ApJL}
@@ -20,52 +48,17 @@
     PhD}\\
 }
 \begin{document}
-\maketitle
+
+
+\input{1titulo.tex}
+\input{2investigadores.tex}
+
+
+
+\newpage 
 \tableofcontents 
-\newpage
+\input{3equipo.tex}
 
-\section{T\'itulo del proyecto}
-\noindent
-Cosmolog\'ia Computacional y Observacional
-
-\section{Investigador principal}
-
-\noindent
-Jaime Ernesto Forero Romero, PhD. Profesor asistente Universidad de los Andes. 
-
-
-\section{Conformaci\'on del equipo de investigaci\'onn}
-%Colocar el nombre y código, registrado en el GrupLac, del o de los
-%grupos de investigación. Al igual que el nombre de los demás
-%integrantes que conforman el equipo de trabajo. Se debe incluir el
-%tiempo de dedicación y funciones en el marco del proyecto.  
-
-\begin{itemize}
-\item Un profesor de planta del grupo de Astrof\'isica de la
-  Universidad de los Andes: Jaime Ernesto  Forero Romero.  
-\item Dos estudiantes de doctorado en el departamento de F\'isica de
-  la Universidad de los Andes: Felipe G\'omez (F\'isico) y otro por
-  definir.  
-\end{itemize}
-
-\noindent
-Con el apoyo de los siguientes asesores internacionales:
-
-\begin{itemize}
-
-\item Stefan Gottloeber, PhD. Cient\'ifico en el Leibniz Institute for Astrophysics, Alemania.
-\item Changbom Park, PhD. Miembro permanente del Korean Institute for Advanced Studies, Corea del Sur.
-\item Robert Cahn, PhD. Cient\'ifico en el Lawrence Berkeley National Laboratory, Estados   Unidos.
-\end{itemize}
-
-\noindent
-Adicionalmente el proyecto cuenta con el soporte del siguiente
-personal de apoyo de la Universidad de los Andes 
-
-\begin{itemize}
-\item{Ingeniero de c\'omputo del departamento de F\'isica.}
-\item{Ingeniero de c\'omputo de alto rendimiento en el Departamento de Servicios de Tecnolog\'ia de la Informaci\'on}.
-\end{itemize}
 
 \section{Antecedentes y resultados previos del equipo de
   investigaci\'on} 
@@ -182,12 +175,12 @@ Astrof\'isica --- Cosmolog\'ia --- Materia oscura --- Energ\'ia oscura
 % Delimitación clara y precisa del objeto de la investigación que
 % se realiza por medio de una pregunta.
 
-La pregunta principal que queremos responder es la siguiente: ¿cómo se
-distribuye la materia en el Universo a gran escala? M\'as precisamente,
-queremos cuantificar los cambios en esta distribuci\'on en funci\'on
-del tiempo y de los par\'ametros cosmol\'ogicos que describen el
-Universo. Con esto esperamos constribuir a colaboraciones internacionales
-sobre cosmolog\'ia observacional.
+Esta propuesta busca realizar una serie de simulaciones
+computacionales del Universo a gran escala. Esto lo haremos con el
+objetivo de cuantificar la influencia de diferentes par\'ametros
+cosmol\'ogicos sobre la formaci\'on de grandes estructuras. Esto nos
+permitir\'a constribuir a colaboraciones internacionales sobre
+cosmolog\'ia observacional. 
 
 De partida nos ubicamos dentro de lo que se conoce como el modelo
 es\'tandar de la cosmolog\'ia. En este modelo el contenido de materia
@@ -230,8 +223,32 @@ observaciones.
 % Factores que hacen necesario y pertinente la realización del
 % proyecto. 
 
-Los principales factores que hacen necesaria y pertinente la
-realizaci\'on de este proyecto.
+Entre las razones que justifican la pertinencia de esta propuesta se
+encuentran las siguientes:
+
+\begin{itemize}
+\item Contribuir a dar respuestas a preguntas actuales sobre la
+  formaci\'on de estructuras en escalas cosmol\'ogicas en un Universo
+  dominado por materia oscura.
+\item Desarrollar m\'etodos para analizar datos observacionales de
+  observaciones de distribuci\'on de galaxias a gran escala para
+  inferir valores de par\'ametros comol\'ogicos.
+\item Integrar colaboraciones internacionales a la frontera de la
+  investigaci\'on en cosmolog\'ia internacional.
+\item Generaci\'on de impacto tecnol\'ogico inmediato en el \'area de
+  computaci\'on de alto rendimiento al:
+\begin{itemize}
+\item Realizar las simulaciones propuestas.
+\item Analizar los datos de estas simulaciones.
+\item Desarrollar herramientspara garantizar y analizar la
+  gran cantidad de datos de las simulaciones.
+\item Desarrollar e implementar nuevos algoritmos para la planeaci\'on
+  de grandes campa\~nas observacionales del Universo.
+\end{itemize}
+\item Formaci\'on de recursos humanos en la pr\'actica de la
+  computaci\'on de alto rendimiento y en el procesamiento de datos
+  para hacerlos accesibles para la comunidad acad\'emica interesada. 
+\end{itemize}
 
 \section{Marco conceptual}
 % Aspectos conceptuales y teóricos que contextualicen el problema de
@@ -447,6 +464,8 @@ planteadas en el Marco Conceptual
 % alcanzará el objetivo general y cada uno de los objetivos
 % específicos del proyecto, presentando los componentes del mismo y
 % las actividades para el logro de estos. 
+
+Para lograr los objetivos del proyecto se plane
 
 \section{Resultados esperados de la investigaci\'on}
 % Conocimiento generado en el cumplimiento de cada uno de los
