@@ -5,5 +5,117 @@
 % específicos del proyecto, presentando los componentes del mismo y
 % las actividades para el logro de estos. 
 
-Para lograr los objetivos del proyecto se plane
+Para lograr los objetivos generales y espec\'ificos del proyecto se
+planean tener las siguientes tareas asociadas a cada uno de los
+objetivos espec\'ificos. 
+
+\subsection*{T1. Infraestructura computacional para hacer simulaciones
+  cosmol\'ogicas} 
+\begin{itemize}
+\item[T1.1] Compra, instalaci\'on y mantenimiento de 6TB espacio de disco
+  con backup para almacenar los datos originales de las simulaciones.
+\item[T1.2] Compra, instalaci\'on y mantenimiento de un blade de
+  procesamiento con 24 procesadores con 512GB para poder analizar y
+  postprocesar las simulaciones.
+\item[T1.4] Instalaci\'on del software abierto {\texttt N-GenIC} para
+  la generaci\'on de condiciones iniciales..
+\item[T1.3] Instalaci\'on del software abierto {\texttt Gadget2} para
+  hacer simulaciones de N-cuerpos cosmol\'ogicas.
+\item[T1.5] Instalaci\'on del sofware abierto {\texttt Rockstar} para
+  la detecci\'on de halos de materia oscura.
+\end{itemize}
+
+\subsubsection*{T2. Simulaciones de formaci\'on de estructura a gran escala.}
+
+\begin{itemize}
+\item[T2.1] Generar las condiciones iniciales para 5 vol\'umenes
+  cosmol\'ogicos. 
+\item[T2.2] Correr las simulaciones para 5 vol\'umenes LCDM.
+\item[T2.3] Controlar la calidad de los 5 vol\'umenes LCDM.
+\item[T2.4] Identificar los halos de materia oscura en los 5
+  vol\'umenes LCDM.
+\end{itemize}
+
+\subsubsection*{T3. Simulaciones de formaci\'on de estructura en una
+  cosmolog\'ia $w$CDM.}
+\begin{itemize}
+\item[T3.1] Correr 5 simulaciones $w$CDM para las mismas condiciones
+  iniciales pero diferentes valores de $w$.
+\item[T3.2] Controlar la calidad de los 5 vol\'umenes $w$CDM
+\item[T3.3] Identificar los halos de materia oscura en los 5 vol\'umenes $w$CDM.
+\end{itemize}
+
+\subsection*{T4. Preparar cat\'alogos ficticios de galaxias}
+\begin{itemize}
+\item[T4.1] Escribir software para la generaci\'on de cat\'alogos
+  ficticios de galaxias aleatorios (i.e. sin ning\'un tipo de
+  clustering).
+\item[T4.2] Adaptar el c\'odigo {\texttt
+  make\_survey}\footnote{\url{https://github.com/mockFactory/make_survey}}
+  para generar  cat\'alogos fictios de galaxias a partir de
+  cat\'alogos de materia oscura.
+\end{itemize}
+
+\subsection*{T5. Secuencias de observaci\'on para el experimento DESI}
+\begin{itemize}
+\item[T5.1] Escribir software que simule la secuencia de observaci\'on
+  de DESI sobre un cat\'alog de galaxias aleatorio.
+\item[T5.2] Escribir software que simule la secuencia de observaci\'on
+  de DESI sobre un cat\'alogo de galaxias generado a partir de una
+  simulaci\'on de N-cuerpos.
+\end{itemize}
+
+\subsection*{T6. Distribuci\'on de fibras \'opticas en el experimento DESI}
+\begin{itemize}
+\item[T6.1]
+\end{itemize}
+
+\subsection*{T7. Simulacion completa (end-to-end) del experimento DESI.}
+\begin{itemize}
+\item[T7.1] Integrar en la base de c\'odigo de DESI el software para
+  preparar cat\'alogos ficticios de galaxias aleatorios.
+\item[T7.2] Integrar en la base de c\'odigo de DESI el software para
+  preparar cat\'alogos ficticios de galaxias a partir de simulaciones
+  de N-cuerpos.
+\item[T7.3] Integrar en la base de c\'odigo de DESI el software para
+  definir las secuencias de observaci\'on del experimento.
+\item[T7.4] Integrar el c\'odigco completo de simulaci\'on end-to-end
+  de DESI
+\item[T7.5] Producir simulaciones completas de simulaci\'on end-to-end
+  de DESI. Desde las observaciones hasta la estimaci\'on de redshifts
+  de galaxias observadas.
+\end{itemize}
+
+\subsection*{T8. Efecto Alcock-Paczinsky (AP) sobre el Beta Skeleton}
+\begin{itemize}
+\item[T8.1] Medir la intensidad del efecto AP sobre cat\'alogos
+  ficticios de galaxias creados a partir de simulaciones de N-cuerpos.
+\item[T8.2] Medir la intensidad del efecto AP sobre observaciones
+  reales de galaxias.
+\end{itemize}
+
+\subsection*{T9. Estad\'isticas de pares de velocidades}
+\begin{itemize}
+\item[T9.1] Cuantificar el n\'umero de pares de c\'umulos de galaxias
+  con velocidades extremas en simulaciones de N-cuerpos en
+  cosmolog\'ias LCDM.
+\item[T9.2] Cuantificar el n\'umero de pares de c\'umulos de galaxias
+  con velocidades extremas en simulaciones de N-cuerpos en
+  cosmolog\'ias $\omega$CDM.
+\end{itemize}
+
+\subsection*{Efecto de RSD sobre estad\'isticas de clustering}
+\begin{itemize}
+\item[T10.1] 
+Cuantificar el efecto de RSD sobre cat\'alogos ficticios de
+  galaxias creados a partir de simulaciones de N-cuerpos en
+  cosmolog\'ias LCDM.
+\item[T10.2] Cuantificar el efecto de RSD sobre cat\'alogos ficticios de
+  galaxias creados a partir de simulaciones de N-cuerpos en
+  cosmolog\'ias $\omega$CDM.
+\item[T10.3] Cuantificar el efecto de RSD sobre los cat\'alogos de
+  posiciones y redshift creados a partir de la herramienta de
+  simulaci\'on end-to-end de DESI.
+\end{itemize}
+
 
