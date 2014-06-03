@@ -29,6 +29,12 @@
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0,5pt}
 
+\newcommand{\prof}{{\bf [PROF]}}
+\newcommand{\tecn}{{\bf [TECN]}}
+\newcommand{\gradA}{{\bf [GRAD1]}}
+\newcommand{\gradB}{{\bf [GRAD2]}}
+\newcommand{\bob}{Con asesor\'ia de Dr. Robert Cahn en Berkeley}
+\newcommand{\park}{Con asesor\'ia de Dr. Changbom Park en Seul}
 \newcommand{\apj}{ApJ}
 \newcommand{\apjs}{ApJS}
 \newcommand{\apjl}{ApJL}
@@ -43,7 +49,23 @@
 \newcommand{\physrep}{PhR}
 \newcommand{\pasp}{PASP}
 \newcommand{\pasj}{PASJ} 
-
+\newcommand{\ly}{{\ifmmode{{\rm Ly}\alpha}\else{Ly$\alpha$}\fi}}
+\newcommand{\hMpc}{{\ifmmode{h^{-1}{\rm Mpc}}\else{$h^{-1}$Mpc }\fi}}
+\newcommand{\hGpc}{{\ifmmode{h^{-1}{\rm Gpc}}\else{$h^{-1}$Gpc }\fi}}
+\newcommand{\hmpc}{{\ifmmode{h^{-1}{\rm Mpc}}\else{$h^{-1}$Mpc }\fi}}
+\newcommand{\hkpc}{{\ifmmode{h^{-1}{\rm kpc}}\else{$h^{-1}$kpc }\fi}}
+\newcommand{\hMsun}{{\ifmmode{h^{-1}{\rm
+        {M_{\odot}}}}\else{$h^{-1}{\rm{M_{\odot}}}$~}\fi}}
+\newcommand{\hmsun}{{\ifmmode{h^{-1}{\rm
+        {M_{\odot}}}}\else{$h^{-1}{\rm{M_{\odot}}}$}\fi}}
+\newcommand{\Msun}{{\ifmmode{{\rm {M_{\odot}}}}\else{${\rm{M_{\odot}}}$}\fi}}
+\newcommand{\msun}{{\ifmmode{{\rm {M_{\odot}}}}\else{${\rm{M_{\odot}}}$}\fi}}
+\newcommand{\lya}{{Lyman$\alpha$~}}
+\newcommand{\clara}{{\texttt{CLARA}}~}
+\newcommand{\rand}{{\ifmmode{{\mathcal{R}}}\else{${\mathcal{R}}$ }\fi}}
+\newcommand{\hs}{{\hspace{1mm}}}
+\newcommand{\muavg}{\vert\langle\cos\theta\rangle\vert}
+\newcommand{\coco}{{\bf CoCO}}
 \begin{document}
 
 
@@ -71,7 +93,7 @@
 \input{17evaluadores.tex}
 \input{18cronograma.tex}
 \input{19impactoambiental.tex}
-\input{20presupuesto.tex}
+
 \newpage
 
 
@@ -85,6 +107,7 @@
 \newpage
 \bibliography{referencias}{}
 \bibliographystyle{plain}
-
+\newpage
+\input{20presupuesto.tex}
 
 \end{document}
